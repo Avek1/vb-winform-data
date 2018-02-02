@@ -1,0 +1,12 @@
+C:\SF.Code\PluralSight\vb-windows-forms-intro\Data\Data\bin\Debug\Data.exe.config
+C:\SF.Code\PluralSight\vb-windows-forms-intro-with-vb\Data\Data\bin\Debug\Data.exe.config
+C:\SF.Code\PluralSight\vb-windows-forms-intro-with-vb\Data\Data\bin\Debug\Data.exe
+C:\SF.Code\PluralSight\vb-windows-forms-intro-with-vb\Data\Data\bin\Debug\Data.pdb
+C:\SF.Code\PluralSight\vb-windows-forms-intro-with-vb\Data\Data\bin\Debug\Data.xml
+C:\SF.Code\PluralSight\vb-windows-forms-intro-with-vb\Data\Data\obj\Debug\Data.vbprojResolveAssemblyReference.cache
+C:\SF.Code\PluralSight\vb-windows-forms-intro-with-vb\Data\Data\obj\Debug\Data.DataForm.resources
+C:\SF.Code\PluralSight\vb-windows-forms-intro-with-vb\Data\Data\obj\Debug\Data.Resources.resources
+C:\SF.Code\PluralSight\vb-windows-forms-intro-with-vb\Data\Data\obj\Debug\Data.vbproj.GenerateResource.Cache
+C:\SF.Code\PluralSight\vb-windows-forms-intro-with-vb\Data\Data\obj\Debug\Data.exe
+C:\SF.Code\PluralSight\vb-windows-forms-intro-with-vb\Data\Data\obj\Debug\Data.xml
+C:\SF.Code\PluralSight\vb-windows-forms-intro-with-vb\Data\Data\obj\Debug\Data.pdb
