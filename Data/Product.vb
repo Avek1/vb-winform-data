@@ -18,6 +18,4 @@
         Me.UnitsOnOrder = unitsOnOrder
         Me.Discontinued = discontinued
     End Sub
-
-
 End Class
