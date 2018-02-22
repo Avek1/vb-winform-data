@@ -104,4 +104,13 @@
 
         Return result.ToList()
     End Function
+
+    Public Function DeleteProduct(product As Product)
+        _products.Remove(product)
+    End Function
+
+    Public Function AddProduct(product As Product)
+        _products.Add(product)
+    End Function
+
 End Class

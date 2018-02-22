@@ -35,5 +35,18 @@
 
     End Sub
 
+    Private Sub AddToolStripButton_Click(sender As Object, e As EventArgs) Handles AddToolStripButton.Click
+        Dim category = CType(CategoryToolStripComboBox.SelectedItem, Category)
+        Dim form As New AddProductForm(category)
+        Dim result = form.ShowDialog()
 
+        If result = DialogResult.OK Then
+            _source.AddProduct(form.Product)
+        End If
+    End Sub
+
+    Private Sub DeleteToolStripButton_Click(sender As Object, e As EventArgs) Handles DeleteToolStripButton.Click
+        Dim product = CType(ProductsListBox.SelectedItem, Product)
+        _source.DeleteProduct(product)
+    End Sub
 End Class

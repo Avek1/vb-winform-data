@@ -33,8 +33,8 @@ Partial Class DataForm
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
+        Me.AddToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.DeleteToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripButton5 = New System.Windows.Forms.ToolStripButton()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
@@ -64,7 +64,7 @@ Partial Class DataForm
         'ToolStrip1
         '
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripLabel1, Me.CategoryToolStripComboBox, Me.ToolStripSeparator1, Me.ToolStripLabel2, Me.ToolStripComboBox2, Me.ToolStripSeparator2, Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripSeparator3, Me.ToolStripButton3, Me.ToolStripButton4, Me.ToolStripSeparator4, Me.ToolStripButton5})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripLabel1, Me.CategoryToolStripComboBox, Me.ToolStripSeparator1, Me.ToolStripLabel2, Me.ToolStripComboBox2, Me.ToolStripSeparator2, Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripSeparator3, Me.AddToolStripButton, Me.DeleteToolStripButton, Me.ToolStripSeparator4, Me.ToolStripButton5})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(1052, 28)
@@ -127,23 +127,23 @@ Partial Class DataForm
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
         Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 28)
         '
-        'ToolStripButton3
+        'AddToolStripButton
         '
-        Me.ToolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton3.Image = CType(resources.GetObject("ToolStripButton3.Image"), System.Drawing.Image)
-        Me.ToolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton3.Name = "ToolStripButton3"
-        Me.ToolStripButton3.Size = New System.Drawing.Size(24, 25)
-        Me.ToolStripButton3.Text = "ToolStripButton3"
+        Me.AddToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.AddToolStripButton.Image = CType(resources.GetObject("AddToolStripButton.Image"), System.Drawing.Image)
+        Me.AddToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.AddToolStripButton.Name = "AddToolStripButton"
+        Me.AddToolStripButton.Size = New System.Drawing.Size(24, 25)
+        Me.AddToolStripButton.Text = "ToolStripButton3"
         '
-        'ToolStripButton4
+        'DeleteToolStripButton
         '
-        Me.ToolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton4.Image = CType(resources.GetObject("ToolStripButton4.Image"), System.Drawing.Image)
-        Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton4.Name = "ToolStripButton4"
-        Me.ToolStripButton4.Size = New System.Drawing.Size(24, 25)
-        Me.ToolStripButton4.Text = "ToolStripButton4"
+        Me.DeleteToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.DeleteToolStripButton.Image = CType(resources.GetObject("DeleteToolStripButton.Image"), System.Drawing.Image)
+        Me.DeleteToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.DeleteToolStripButton.Name = "DeleteToolStripButton"
+        Me.DeleteToolStripButton.Size = New System.Drawing.Size(24, 25)
+        Me.DeleteToolStripButton.Text = "ToolStripButton4"
         '
         'ToolStripSeparator4
         '
@@ -361,8 +361,8 @@ Partial Class DataForm
     Friend WithEvents ToolStripButton1 As ToolStripButton
     Friend WithEvents ToolStripButton2 As ToolStripButton
     Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
-    Friend WithEvents ToolStripButton3 As ToolStripButton
-    Friend WithEvents ToolStripButton4 As ToolStripButton
+    Friend WithEvents AddToolStripButton As ToolStripButton
+    Friend WithEvents DeleteToolStripButton As ToolStripButton
     Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
     Friend WithEvents ToolStripButton5 As ToolStripButton
     Friend WithEvents Label6 As Label

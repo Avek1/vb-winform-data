@@ -72,6 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddProductForm.designer.vb">
+      <DependentUpon>AddProductForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddProductForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Category.vb" />
     <Compile Include="DataForm.vb">
       <SubType>Form</SubType>
@@ -99,6 +105,9 @@
     <Compile Include="Product.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AddProductForm.resx">
+      <DependentUpon>AddProductForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DataForm.resx">
       <DependentUpon>DataForm.vb</DependentUpon>
     </EmbeddedResource>
