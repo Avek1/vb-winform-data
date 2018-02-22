@@ -25,7 +25,7 @@ Partial Class DataForm
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DataForm))
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
-        Me.CategoriesComboBox2 = New System.Windows.Forms.ToolStripComboBox()
+        Me.CategoryToolStripComboBox = New System.Windows.Forms.ToolStripComboBox()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripLabel2 = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripComboBox2 = New System.Windows.Forms.ToolStripComboBox()
@@ -40,19 +40,18 @@ Partial Class DataForm
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.DiscontinuedCheckBox = New System.Windows.Forms.CheckBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.OrderTextBox = New System.Windows.Forms.TextBox()
+        Me.QuantityTextBox = New System.Windows.Forms.TextBox()
         Me.StockTextBox = New System.Windows.Forms.TextBox()
         Me.PriceTextBox = New System.Windows.Forms.TextBox()
         Me.NameTextBox = New System.Windows.Forms.TextBox()
         Me.ProductsListBox = New System.Windows.Forms.ListBox()
-        Me.CategoriesComboBox = New System.Windows.Forms.ComboBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.ProductsDataGridView = New System.Windows.Forms.DataGridView()
         Me.ToolStrip1.SuspendLayout()
@@ -65,7 +64,7 @@ Partial Class DataForm
         'ToolStrip1
         '
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripLabel1, Me.CategoriesComboBox2, Me.ToolStripSeparator1, Me.ToolStripLabel2, Me.ToolStripComboBox2, Me.ToolStripSeparator2, Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripSeparator3, Me.ToolStripButton3, Me.ToolStripButton4, Me.ToolStripSeparator4, Me.ToolStripButton5})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripLabel1, Me.CategoryToolStripComboBox, Me.ToolStripSeparator1, Me.ToolStripLabel2, Me.ToolStripComboBox2, Me.ToolStripSeparator2, Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripSeparator3, Me.ToolStripButton3, Me.ToolStripButton4, Me.ToolStripSeparator4, Me.ToolStripButton5})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(1052, 28)
@@ -78,11 +77,11 @@ Partial Class DataForm
         Me.ToolStripLabel1.Size = New System.Drawing.Size(72, 25)
         Me.ToolStripLabel1.Text = "Category:"
         '
-        'CategoriesComboBox2
+        'CategoryToolStripComboBox
         '
-        Me.CategoriesComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CategoriesComboBox2.Name = "CategoriesComboBox2"
-        Me.CategoriesComboBox2.Size = New System.Drawing.Size(121, 28)
+        Me.CategoryToolStripComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CategoryToolStripComboBox.Name = "CategoryToolStripComboBox"
+        Me.CategoryToolStripComboBox.Size = New System.Drawing.Size(121, 28)
         '
         'ToolStripSeparator1
         '
@@ -174,19 +173,18 @@ Partial Class DataForm
         'TabPage1
         '
         Me.TabPage1.Controls.Add(Me.Label6)
-        Me.TabPage1.Controls.Add(Me.CheckBox1)
+        Me.TabPage1.Controls.Add(Me.DiscontinuedCheckBox)
         Me.TabPage1.Controls.Add(Me.Label5)
         Me.TabPage1.Controls.Add(Me.Label4)
         Me.TabPage1.Controls.Add(Me.Label3)
         Me.TabPage1.Controls.Add(Me.Label2)
         Me.TabPage1.Controls.Add(Me.Label1)
-        Me.TabPage1.Controls.Add(Me.TextBox2)
-        Me.TabPage1.Controls.Add(Me.TextBox1)
+        Me.TabPage1.Controls.Add(Me.OrderTextBox)
+        Me.TabPage1.Controls.Add(Me.QuantityTextBox)
         Me.TabPage1.Controls.Add(Me.StockTextBox)
         Me.TabPage1.Controls.Add(Me.PriceTextBox)
         Me.TabPage1.Controls.Add(Me.NameTextBox)
         Me.TabPage1.Controls.Add(Me.ProductsListBox)
-        Me.TabPage1.Controls.Add(Me.CategoriesComboBox)
         Me.TabPage1.Location = New System.Drawing.Point(4, 25)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
@@ -204,15 +202,15 @@ Partial Class DataForm
         Me.Label6.TabIndex = 13
         Me.Label6.Text = "Discontinued"
         '
-        'CheckBox1
+        'DiscontinuedCheckBox
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(513, 241)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(100, 21)
-        Me.CheckBox1.TabIndex = 12
-        Me.CheckBox1.Text = "CheckBox1"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.DiscontinuedCheckBox.AutoSize = True
+        Me.DiscontinuedCheckBox.Location = New System.Drawing.Point(513, 241)
+        Me.DiscontinuedCheckBox.Name = "DiscontinuedCheckBox"
+        Me.DiscontinuedCheckBox.Size = New System.Drawing.Size(100, 21)
+        Me.DiscontinuedCheckBox.TabIndex = 12
+        Me.DiscontinuedCheckBox.Text = "CheckBox1"
+        Me.DiscontinuedCheckBox.UseVisualStyleBackColor = True
         '
         'Label5
         '
@@ -226,7 +224,7 @@ Partial Class DataForm
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(394, 88)
+        Me.Label4.Location = New System.Drawing.Point(394, 94)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(116, 17)
         Me.Label4.TabIndex = 10
@@ -235,7 +233,7 @@ Partial Class DataForm
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(394, 171)
+        Me.Label3.Location = New System.Drawing.Point(394, 180)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(94, 17)
         Me.Label3.TabIndex = 9
@@ -244,7 +242,7 @@ Partial Class DataForm
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(394, 128)
+        Me.Label2.Location = New System.Drawing.Point(394, 135)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(69, 17)
         Me.Label2.TabIndex = 8
@@ -259,30 +257,30 @@ Partial Class DataForm
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Name"
         '
-        'TextBox2
+        'OrderTextBox
         '
-        Me.TextBox2.Location = New System.Drawing.Point(513, 212)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox2.TabIndex = 6
+        Me.OrderTextBox.Location = New System.Drawing.Point(513, 212)
+        Me.OrderTextBox.Name = "OrderTextBox"
+        Me.OrderTextBox.Size = New System.Drawing.Size(205, 22)
+        Me.OrderTextBox.TabIndex = 6
         '
-        'TextBox1
+        'QuantityTextBox
         '
-        Me.TextBox1.Location = New System.Drawing.Point(513, 87)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox1.TabIndex = 5
+        Me.QuantityTextBox.Location = New System.Drawing.Point(513, 93)
+        Me.QuantityTextBox.Name = "QuantityTextBox"
+        Me.QuantityTextBox.Size = New System.Drawing.Size(205, 22)
+        Me.QuantityTextBox.TabIndex = 5
         '
         'StockTextBox
         '
-        Me.StockTextBox.Location = New System.Drawing.Point(513, 167)
+        Me.StockTextBox.Location = New System.Drawing.Point(513, 176)
         Me.StockTextBox.Name = "StockTextBox"
         Me.StockTextBox.Size = New System.Drawing.Size(205, 22)
         Me.StockTextBox.TabIndex = 4
         '
         'PriceTextBox
         '
-        Me.PriceTextBox.Location = New System.Drawing.Point(513, 127)
+        Me.PriceTextBox.Location = New System.Drawing.Point(513, 134)
         Me.PriceTextBox.Name = "PriceTextBox"
         Me.PriceTextBox.Size = New System.Drawing.Size(205, 22)
         Me.PriceTextBox.TabIndex = 3
@@ -302,15 +300,6 @@ Partial Class DataForm
         Me.ProductsListBox.Name = "ProductsListBox"
         Me.ProductsListBox.Size = New System.Drawing.Size(341, 324)
         Me.ProductsListBox.TabIndex = 1
-        '
-        'CategoriesComboBox
-        '
-        Me.CategoriesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CategoriesComboBox.FormattingEnabled = True
-        Me.CategoriesComboBox.Location = New System.Drawing.Point(36, 26)
-        Me.CategoriesComboBox.Name = "CategoriesComboBox"
-        Me.CategoriesComboBox.Size = New System.Drawing.Size(341, 24)
-        Me.CategoriesComboBox.TabIndex = 0
         '
         'TabPage2
         '
@@ -358,14 +347,13 @@ Partial Class DataForm
     Friend WithEvents TabControl1 As TabControl
     Friend WithEvents TabPage1 As TabPage
     Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents CategoriesComboBox As ComboBox
     Friend WithEvents ProductsDataGridView As DataGridView
     Friend WithEvents ProductsListBox As ListBox
     Friend WithEvents StockTextBox As TextBox
     Friend WithEvents PriceTextBox As TextBox
     Friend WithEvents NameTextBox As TextBox
     Friend WithEvents ToolStripLabel1 As ToolStripLabel
-    Friend WithEvents CategoriesComboBox2 As ToolStripComboBox
+    Friend WithEvents CategoryToolStripComboBox As ToolStripComboBox
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
     Friend WithEvents ToolStripLabel2 As ToolStripLabel
     Friend WithEvents ToolStripComboBox2 As ToolStripComboBox
@@ -378,12 +366,12 @@ Partial Class DataForm
     Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
     Friend WithEvents ToolStripButton5 As ToolStripButton
     Friend WithEvents Label6 As Label
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents DiscontinuedCheckBox As CheckBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents OrderTextBox As TextBox
+    Friend WithEvents QuantityTextBox As TextBox
 End Class
