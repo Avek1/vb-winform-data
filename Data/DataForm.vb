@@ -32,7 +32,6 @@
         OrderTextBox.DataBindings.Add("Text", products, "UnitsOnOrder")
         DiscontinuedCheckBox.DataBindings.Clear()
         DiscontinuedCheckBox.DataBindings.Add("Checked", products, "Discontinued")
-
     End Sub
 
     Private Sub AddToolStripButton_Click(sender As Object, e As EventArgs) Handles AddToolStripButton.Click
