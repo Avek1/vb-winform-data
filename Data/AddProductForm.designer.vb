@@ -42,19 +42,21 @@ Partial Class AddProductForm
         '
         'CategoryTextBox
         '
-        Me.CategoryTextBox.Location = New System.Drawing.Point(120, 38)
+        Me.CategoryTextBox.Location = New System.Drawing.Point(160, 47)
+        Me.CategoryTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CategoryTextBox.Name = "CategoryTextBox"
         Me.CategoryTextBox.ReadOnly = True
-        Me.CategoryTextBox.Size = New System.Drawing.Size(209, 20)
+        Me.CategoryTextBox.Size = New System.Drawing.Size(277, 22)
         Me.CategoryTextBox.TabIndex = 3
         Me.CategoryTextBox.TabStop = False
         '
         'CancelButton
         '
         Me.CancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.CancelButton.Location = New System.Drawing.Point(254, 191)
+        Me.CancelButton.Location = New System.Drawing.Point(339, 235)
+        Me.CancelButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CancelButton.Name = "CancelButton"
-        Me.CancelButton.Size = New System.Drawing.Size(75, 23)
+        Me.CancelButton.Size = New System.Drawing.Size(100, 28)
         Me.CancelButton.TabIndex = 15
         Me.CancelButton.Text = "Cancel"
         Me.CancelButton.UseVisualStyleBackColor = True
@@ -62,9 +64,10 @@ Partial Class AddProductForm
         'OKButton
         '
         Me.OKButton.DialogResult = System.Windows.Forms.DialogResult.OK
-        Me.OKButton.Location = New System.Drawing.Point(173, 191)
+        Me.OKButton.Location = New System.Drawing.Point(231, 235)
+        Me.OKButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.OKButton.Name = "OKButton"
-        Me.OKButton.Size = New System.Drawing.Size(75, 23)
+        Me.OKButton.Size = New System.Drawing.Size(100, 28)
         Me.OKButton.TabIndex = 14
         Me.OKButton.Text = "OK"
         Me.OKButton.UseVisualStyleBackColor = True
@@ -72,116 +75,129 @@ Partial Class AddProductForm
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(14, 41)
+        Me.Label2.Location = New System.Drawing.Point(19, 50)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(49, 13)
+        Me.Label2.Size = New System.Drawing.Size(65, 17)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Category"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(14, 173)
+        Me.Label7.Location = New System.Drawing.Point(19, 213)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(69, 13)
+        Me.Label7.Size = New System.Drawing.Size(90, 17)
         Me.Label7.TabIndex = 12
         Me.Label7.Text = "Discontinued"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(14, 150)
+        Me.Label6.Location = New System.Drawing.Point(19, 185)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(75, 13)
+        Me.Label6.Size = New System.Drawing.Size(101, 17)
         Me.Label6.TabIndex = 10
         Me.Label6.Text = "Units on Order"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(14, 124)
+        Me.Label5.Location = New System.Drawing.Point(19, 153)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(73, 13)
+        Me.Label5.Size = New System.Drawing.Size(94, 17)
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "Units in Stock"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(14, 98)
+        Me.Label4.Location = New System.Drawing.Point(19, 121)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(53, 13)
+        Me.Label4.Size = New System.Drawing.Size(69, 17)
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "Unit Price"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(14, 72)
+        Me.Label3.Location = New System.Drawing.Point(19, 89)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(87, 13)
+        Me.Label3.Size = New System.Drawing.Size(116, 17)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Quantity Per Unit"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(14, 18)
+        Me.Label1.Location = New System.Drawing.Point(19, 22)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(35, 13)
+        Me.Label1.Size = New System.Drawing.Size(45, 17)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Name"
         '
         'OrderTextBox
         '
-        Me.OrderTextBox.Location = New System.Drawing.Point(120, 143)
+        Me.OrderTextBox.Location = New System.Drawing.Point(160, 176)
+        Me.OrderTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.OrderTextBox.Name = "OrderTextBox"
-        Me.OrderTextBox.Size = New System.Drawing.Size(209, 20)
+        Me.OrderTextBox.Size = New System.Drawing.Size(277, 22)
         Me.OrderTextBox.TabIndex = 11
         '
         'DiscontinuedCheckBox
         '
         Me.DiscontinuedCheckBox.AutoSize = True
-        Me.DiscontinuedCheckBox.Location = New System.Drawing.Point(120, 173)
+        Me.DiscontinuedCheckBox.Location = New System.Drawing.Point(160, 213)
+        Me.DiscontinuedCheckBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DiscontinuedCheckBox.Name = "DiscontinuedCheckBox"
-        Me.DiscontinuedCheckBox.Size = New System.Drawing.Size(15, 14)
+        Me.DiscontinuedCheckBox.Size = New System.Drawing.Size(18, 17)
         Me.DiscontinuedCheckBox.TabIndex = 13
         Me.DiscontinuedCheckBox.UseVisualStyleBackColor = True
         '
         'StockTextBox
         '
-        Me.StockTextBox.Location = New System.Drawing.Point(120, 117)
+        Me.StockTextBox.Location = New System.Drawing.Point(160, 144)
+        Me.StockTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.StockTextBox.Name = "StockTextBox"
-        Me.StockTextBox.Size = New System.Drawing.Size(209, 20)
+        Me.StockTextBox.Size = New System.Drawing.Size(277, 22)
         Me.StockTextBox.TabIndex = 9
         '
         'PriceTextBox
         '
-        Me.PriceTextBox.Location = New System.Drawing.Point(120, 91)
+        Me.PriceTextBox.Location = New System.Drawing.Point(160, 112)
+        Me.PriceTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PriceTextBox.Name = "PriceTextBox"
-        Me.PriceTextBox.Size = New System.Drawing.Size(209, 20)
+        Me.PriceTextBox.Size = New System.Drawing.Size(277, 22)
         Me.PriceTextBox.TabIndex = 7
         '
         'QuantityTextBox
         '
-        Me.QuantityTextBox.Location = New System.Drawing.Point(120, 65)
+        Me.QuantityTextBox.Location = New System.Drawing.Point(160, 80)
+        Me.QuantityTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.QuantityTextBox.Name = "QuantityTextBox"
-        Me.QuantityTextBox.Size = New System.Drawing.Size(209, 20)
+        Me.QuantityTextBox.Size = New System.Drawing.Size(277, 22)
         Me.QuantityTextBox.TabIndex = 5
         '
         'NameTextBox
         '
-        Me.NameTextBox.Location = New System.Drawing.Point(120, 12)
+        Me.NameTextBox.Location = New System.Drawing.Point(160, 15)
+        Me.NameTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.NameTextBox.Name = "NameTextBox"
-        Me.NameTextBox.Size = New System.Drawing.Size(209, 20)
+        Me.NameTextBox.Size = New System.Drawing.Size(277, 22)
         Me.NameTextBox.TabIndex = 1
         '
         'AddProductForm
         '
         Me.AcceptButton = Me.OKButton
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(344, 226)
+        Me.ClientSize = New System.Drawing.Size(459, 278)
         Me.ControlBox = False
         Me.Controls.Add(Me.CategoryTextBox)
         Me.Controls.Add(Me.CancelButton)
@@ -200,6 +216,7 @@ Partial Class AddProductForm
         Me.Controls.Add(Me.QuantityTextBox)
         Me.Controls.Add(Me.NameTextBox)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "AddProductForm"
         Me.Text = "Add Product"
         Me.ResumeLayout(False)
