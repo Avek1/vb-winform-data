@@ -1,4 +1,5 @@
 ﻿Public Class ObjectSource
+    Implements ISource
     Private _categories As List(Of Category)
     Private _products As List(Of Product)
 
@@ -93,11 +94,11 @@
         _products.Add(New Product(77, "Original Frankfurter grüne Soße", 2, "12 boxes", 13.0, 32, 0, False))
     End Sub
 
-    Public Function GetCategories() As IList(Of Category)
+    Public Function GetCategories() As Object Implements ISource.GetCategories
         Return _categories
     End Function
 
-    Public Function GetProducts(categoryId As Integer) As IList(Of Product)
+    Public Function GetProducts(categoryId As Integer) As Object Implements ISource.GetProducts
         Dim result = From p In _products
                      Where p.CategoryId = categoryId
                      Select p
@@ -105,12 +106,24 @@
         Return result.ToList()
     End Function
 
-    Public Function DeleteProduct(product As Product)
-        _products.Remove(product)
-    End Function
+    Public Sub DeleteProduct(bindingSource As BindingSource, productId As Integer) Implements ISource.DeleteProduct
+        Dim query = From p In _products
+                    Where p.ProductID = productId
+                    Select p
+        Dim product = query.Single()
 
-    Public Function AddProduct(product As Product)
-        _products.Add(product)
-    End Function
+        bindingSource.Remove(product)
+    End Sub
 
+    Public Sub AddProduct(bindingSource As BindingSource, product As Product) Implements ISource.AddProduct
+        Dim maxID = Aggregate p In _products
+                        Into Max(p.ProductID)
+        product.ProductID = maxID + 1
+
+        bindingSource.Add(product)
+    End Sub
+
+    Public Sub Save() Implements ISource.Save
+        'nothing to do
+    End Sub
 End Class
