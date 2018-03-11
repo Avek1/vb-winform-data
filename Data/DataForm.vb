@@ -6,6 +6,7 @@
     Private _currentSource As ISource
     Private _objectSource As ObjectSource
     Private _dataSetSource As DataSetSource
+    Private _linqSource As LinqSource
 
     Private Sub DataForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SourceToolStripComboBox.SelectedIndex = 0
@@ -24,12 +25,12 @@
         ProductsListBox.DataSource = _productsbindingsource
 
         NameTextBox.DataBindings.Clear()
-        NameTextBox.DataBindings.Add("Text", _productsbindingsource, "ProductName")
-        QuantityTextBox.DataBindings.Add("Text", _productsbindingsource, "QuantityPerUnit")
-        PriceTextBox.DataBindings.Add("Text", _productsbindingsource, "UnitPrice")
-        StockTextBox.DataBindings.Add("Text", _productsbindingsource, "UnitsInStock")
-        OrderTextBox.DataBindings.Add("Text", _productsbindingsource, "UnitsOnOrder")
-        DiscontinuedCheckBox.DataBindings.Add("Checked", _productsbindingsource, "Discontinued")
+        NameTextBox.DataBindings.Add("Text", _productsbindingsource, "ProductName", True)
+        QuantityTextBox.DataBindings.Add("Text", _productsbindingsource, "QuantityPerUnit", True)
+        PriceTextBox.DataBindings.Add("Text", _productsbindingsource, "UnitPrice", True)
+        StockTextBox.DataBindings.Add("Text", _productsbindingsource, "UnitsInStock", True)
+        OrderTextBox.DataBindings.Add("Text", _productsbindingsource, "UnitsOnOrder", True)
+        DiscontinuedCheckBox.DataBindings.Add("Checked", _productsbindingsource, "Discontinued", True)
 
     End Sub
 
@@ -85,6 +86,11 @@
                     _dataSetSource = New DataSetSource()
                 End If
                 _currentSource = _dataSetSource
+            Case 2
+                If _linqSource Is Nothing Then
+                    _linqSource = New LinqSource()
+                End If
+                _currentSource = _linqSource
         End Select
     End Sub
 

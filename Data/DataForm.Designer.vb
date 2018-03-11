@@ -96,7 +96,7 @@ Partial Class DataForm
         '
         'SourceToolStripComboBox
         '
-        Me.SourceToolStripComboBox.Items.AddRange(New Object() {"Objects", "DataSet"})
+        Me.SourceToolStripComboBox.Items.AddRange(New Object() {"Objects", "DataSet", "LINQ to SQL"})
         Me.SourceToolStripComboBox.Name = "SourceToolStripComboBox"
         Me.SourceToolStripComboBox.Size = New System.Drawing.Size(121, 28)
         '
